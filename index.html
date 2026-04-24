@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimodal Model Frontend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #imageCanvas {
+            border: 1px solid #ccc;
+            max-width: 100%;
+        }
+        #result {
+            margin-top: 20px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multimodal Model Query App</h1>
+    <p>Upload an image and enter a prompt to query the model (e.g., "在这张BEV图像中定位所有停车位，并以JSON格式输出每个停车位的四个角点").</p>
+    <input type="file" id="imageInput" accept="image/*">
+    <br><br>
+    <textarea id="promptInput" rows="4" cols="50" placeholder="Enter your prompt here..."></textarea>
+    <br><br>
+    <button id="submitBtn">Submit Query</button>
+    <br><br>
+    <canvas id="imageCanvas"></canvas>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
