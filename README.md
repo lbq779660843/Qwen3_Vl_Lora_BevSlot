@@ -1,4 +1,8 @@
-# Qwen3-VL-8B 车位 BBox 检测模型 — 训练与部署(流程以及验证demo都是Claude Code编写的)
+# Qwen3-VL-8B 车位 BBox 检测模型 — 训练与部署
+
+> 全流程（训练、部署、推理验证）由 Claude Code 协助完成。
+>
+> ![Claude Code 调用示例](assets/cc.png)
 
 ## 环境
 
@@ -244,6 +248,10 @@ curl http://localhost:8001/v1/chat/completions \
 ```
 
 bbox 格式为 `[x1, y1, x2, y2]`（左上角 → 右下角）。
+
+### 可视化结果
+
+![车位检测结果](assets/5550scan_000098_result.jpg)
 
 ---
 
